@@ -44,13 +44,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DataStructure\DataStructure.csproj">
-      <Project>{9c2f61ce-2e6d-41ec-bcc2-e7c7f434029a}</Project>
-      <Name>DataStructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{6cf6d203-6a26-4f28-93bc-8a48b5eb9d8e}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataStructure\DataStructure.csproj">
+      <Project>{9c2f61ce-2e6d-41ec-bcc2-e7c7f434029a}</Project>
+      <Name>DataStructure</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
