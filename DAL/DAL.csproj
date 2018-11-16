@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessBase.cs" />
     <Compile Include="ConnectionHandler.cs" />
     <Compile Include="Migrations\201811152159345_Create_DB.cs" />
     <Compile Include="Migrations\201811152159345_Create_DB.Designer.cs">
