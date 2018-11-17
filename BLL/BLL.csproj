@@ -49,7 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookBO.cs" />
+    <Compile Include="BorrowBO.cs" />
     <Compile Include="CategoryBO.cs" />
+    <Compile Include="FileBO.cs" />
+    <Compile Include="MemberBO.cs" />
+    <Compile Include="PenaltyBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

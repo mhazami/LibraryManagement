@@ -18,6 +18,8 @@ namespace LibraryManagement.DAL
 
         public virtual DbSet<File> File { get; set; }
 
+        public virtual DbSet<Member> Member { get; set; }
 
+        public virtual DbSet<Borrow> Borrow { get; set; }
     }
 }

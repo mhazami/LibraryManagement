@@ -12,7 +12,6 @@ namespace LibraryManagement.WebApp.Controllers
         // GET: Category
         public ActionResult Index()
         {
-           
             return View();
         }
     }

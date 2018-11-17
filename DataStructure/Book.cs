@@ -31,6 +31,10 @@ namespace LibraryManagement.DataStructure
         public Guid FileId { get; set; }
         public virtual File File { get; set; }
 
+        [Required]
+        [MaxLength(250)]
+        public string writer { get; set; }
+
 
 
     }
