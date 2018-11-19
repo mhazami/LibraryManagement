@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagement.BLL.Base
+namespace LibraryManagement.DAL
 {
     public class BusinessBase<TDBModel> where TDBModel : class
     {

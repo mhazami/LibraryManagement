@@ -1,4 +1,4 @@
-﻿using LibraryManagement.BLL.Base;
+﻿using LibraryManagement.DAL;
 using LibraryManagement.DataStructure;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,15 @@ namespace LibraryManagement.BLL
 {
     public class CategoryBO : BusinessBase<Category>
     {
+        public override bool Insert(Category obj)
+        {
+            obj.CategoryId = Guid.NewGuid();
+            return base.Insert(obj);
+        }
+
        
+
     }
+
+   
 }

@@ -1,4 +1,4 @@
-﻿using LibraryManagement.BLL.Base;
+﻿using LibraryManagement.DAL;
 using LibraryManagement.DataStructure;
 using System;
 using System.Collections.Generic;
