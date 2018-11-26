@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.BLL
 {
-    public class MemberBO : BusinessBase<Member>
+    public class Borrow : BusinessBase<DataStructure.Borrow>
     {
     }
 }

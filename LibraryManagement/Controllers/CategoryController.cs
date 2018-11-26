@@ -12,7 +12,7 @@ namespace LibraryManagement.WebApp.Controllers
         // GET: Category
         public ActionResult Index()
         {
-            ViewBag.Value = new CategoryBO().Where(c=>c.Title.Contains("tes"));
+            //ViewBag.Value = new CategoryBO().Where(c=>c.Title.Contains("tes"));
             return View();
         }
     }

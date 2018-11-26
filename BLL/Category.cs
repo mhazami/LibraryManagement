@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.BLL
 {
-    public class CategoryBO : BusinessBase<Category>
+    public class Category : BusinessBase<DataStructure.Category>
     {
-        public override bool Insert(Category obj)
+        public override bool Insert(DataStructure.Category obj)
         {
             obj.CategoryId = Guid.NewGuid();
             return base.Insert(obj);
         }
+
 
        
 

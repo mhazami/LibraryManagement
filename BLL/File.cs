@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.BLL
 {
-    public class FileBO : BusinessBase<File>
+    public class File : BusinessBase<DataStructure.File>
     {
     }
 }

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace LibraryManagement.BLL
 {
-    public class BorrowBO : BusinessBase<Borrow>
+    public class Book : BusinessBase<DataStructure.Book>
     {
+       
     }
 }

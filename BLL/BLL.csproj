@@ -48,12 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookBO.cs" />
-    <Compile Include="BorrowBO.cs" />
-    <Compile Include="CategoryBO.cs" />
-    <Compile Include="FileBO.cs" />
-    <Compile Include="MemberBO.cs" />
-    <Compile Include="PenaltyBO.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="Borrow.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Penalty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
