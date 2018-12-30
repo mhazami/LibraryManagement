@@ -10,5 +10,10 @@ namespace LibraryManagement.BLL
 {
     public class Borrow : BusinessBase<DataStructure.Borrow>
     {
+        public override bool Insert(DataStructure.Borrow obj)
+        {
+            obj.BookId = Guid.NewGuid();
+            return base.Insert(obj);
+        }
     }
 }

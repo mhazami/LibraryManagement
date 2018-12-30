@@ -1,0 +1,62 @@
+﻿@using LibraryManagement.DataStructure;
+@model IEnumerable<Book>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    foreach (var item in Model)
+    {
+        <div class="col-md-3 wel_grid">
+            <img src="@Url.Action("ImageHandler", "File", new {area="Admin", id = item.FileId })" class="img-responsive" alt="" />
+            <h5>
+                <a href="#">
+                    @item.Title
+                </a>
+            </h5>
+            <p>@item.Subject</p>
+        </div>
+    }
+}
+
+@*<div class="col-md-3 wel_grid">
+    <img src="images/w1.jpg" class="img-responsive" alt="" />
+    <h5>
+        <a href="#">
+
+            لورم ایپسوم یا طرح‌نما
+        </a>
+    </h5>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+</div>
+<div class="col-md-3 wel_grid">
+    <img src="images/w3.jpg" class="img-responsive" alt="" />
+    <h5>
+        <a href="#">
+
+            لورم ایپسوم یا طرح‌نما
+        </a>
+    </h5>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+</div>
+<div class="col-md-3 wel_grid">
+    <img src="images/w2.jpg" class="img-responsive" alt="" />
+    <h5>
+        <a href="#">
+
+            لورم ایپسوم یا طرح‌نما
+        </a>
+    </h5>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+</div>
+<div class="col-md-3 wel_grid">
+    <img src="images/w4.jpg" class="img-responsive" alt="" />
+    <h5>
+        <a href="#">
+
+            لورم ایپسوم یا طرح‌نما
+        </a>
+    </h5>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+</div>*@

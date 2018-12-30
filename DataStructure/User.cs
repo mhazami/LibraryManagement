@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,9 +34,22 @@ namespace LibraryManagement.DataStructure
         [IsNationalCode("لطفا کد ملی را وارد کنید")]
         public string NationalCode { get; set; }
 
-        [Display(Name ="عکس")]
+        [Display(Name = "عکس")]
         public Guid FileId { get; set; }
         public File File { get; set; }
 
+        [Required(ErrorMessage = "لطفا نام کاربری را وارد کنید")]
+        [Display(Name = "نام کاربری")]
+        [MaxLength(150)]
+        public string Username { get; set; }
+
+        [Required(ErrorMessage = "لطفا رمز عبور را وارد کنید")]
+        [Display(Name = "رمز عبور")]
+        public string Password { get; set; }
+
+        #region temp
+        [NotMapped]
+        public string ConfirmPassword { get; set; }
+        #endregion temp
     }
 }

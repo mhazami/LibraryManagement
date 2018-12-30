@@ -69,7 +69,7 @@ namespace LibraryManagement.DAL
             return db.Set<TDBModel>().Where(query).ToList();
         }
 
-        public virtual TDBModel FirstOrDefualt(Expression<Func<TDBModel, bool>> query)
+        public virtual TDBModel FirstOrDefault(Expression<Func<TDBModel, bool>> query)
         {
             return db.Set<TDBModel>().FirstOrDefault(query);
         }
@@ -79,12 +79,12 @@ namespace LibraryManagement.DAL
             return db.Set<TDBModel>().Count();
         }
 
-        public virtual int Count(Expression<Func<TDBModel,bool>> query)
+        public virtual int Count(Expression<Func<TDBModel, bool>> query)
         {
             return db.Set<TDBModel>().Count(query);
         }
 
-       
+
 
     }
     public static class PredicateBuilder
