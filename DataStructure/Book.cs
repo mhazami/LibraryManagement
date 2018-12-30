@@ -13,25 +13,29 @@ namespace LibraryManagement.DataStructure
         public Guid BookId { get; set; }
 
         [MaxLength(250)]
-        [Required]
+        [Required(ErrorMessage = "لطفا عنوان کتاب را وارد کنید")]
+        [Display(Name = "عنوان")]
         public string Title { get; set; }
 
         [MaxLength(10)]
-        [Required]
+        [Required(ErrorMessage = "لطفا کد دسته بندی کتاب را وارد کنید")]
+        [Display(Name = "کد کتاب")]
         public string Code { get; set; }
 
         [MaxLength(4000)]
-        [Required]
+        [Display(Name ="موضوع")]
         public string Subject { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="لطفا گروه کتاب را مشخص کنید")]
+        [Display(Name ="گروه")]
         public Guid CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
+        [Display(Name ="تصویر کتاب")]
         public Guid FileId { get; set; }
         public virtual File File { get; set; }
 
-       
+
 
 
     }

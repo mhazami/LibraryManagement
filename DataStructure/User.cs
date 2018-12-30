@@ -33,8 +33,9 @@ namespace LibraryManagement.DataStructure
         [IsNationalCode("لطفا کد ملی را وارد کنید")]
         public string NationalCode { get; set; }
 
+        [Display(Name ="عکس")]
         public Guid FileId { get; set; }
-
+        public File File { get; set; }
 
     }
 }

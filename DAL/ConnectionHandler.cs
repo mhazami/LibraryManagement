@@ -20,6 +20,10 @@ namespace LibraryManagement.DAL
 
         public virtual DbSet<Member> Member { get; set; }
 
+        public virtual DbSet<BookTranslator> BookTranslators { get; set; }
+
+        public virtual DbSet<Setting> Settings { get; set; }
+
         public virtual DbSet<Borrow> Borrow { get; set; }
 
         public virtual DbSet<User> Users { get; set; }

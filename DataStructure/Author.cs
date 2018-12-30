@@ -10,17 +10,20 @@ namespace LibraryManagement.DataStructure
     public class Author
     {
         [Key]
-        public Guid AuthorId { get; set; }
+        public Guid Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "لطفا نام نویسنده را وارد کنید")]
+        [Display(Name = "نام")]
         [MaxLength(150)]
         public string FirstName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "لطفا نام خانوادگی نویسنده را وارد کنید")]
+        [Display(Name = "نام خانوادگی")]
         [MaxLength(150)]
         public string LastName { get; set; }
 
         [MaxLength(100)]
+        [Display(Name = "ملیت")]
         public string Country { get; set; }
 
 

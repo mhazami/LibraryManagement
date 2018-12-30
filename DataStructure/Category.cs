@@ -13,7 +13,8 @@ namespace LibraryManagement.DataStructure
         public Guid CategoryId { get; set; }
 
         [MaxLength(250)]
-        [Required]
+        [Required(ErrorMessage = "لطفا عنوان گروه را وارد کنید")]
+        [Display(Name = "عنوان")]
         public string Title { get; set; }
     }
 }
